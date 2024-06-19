@@ -3,7 +3,7 @@ from typing import Optional
 from uuid import UUID, uuid4
 
 
-class Movies(BaseModel):
+class Movie(BaseModel):
     id: Optional[UUID] = Field(default_factory=uuid4)
     name: str
     genre: str
